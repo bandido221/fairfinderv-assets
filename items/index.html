@@ -2,93 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Item Gallery</title>
+  <title>Item Gallery with Code</title>
   <style>
     body {
       font-family: sans-serif;
-      background: #f8f8f8;
+      background: #f0f0f0;
       padding: 20px;
     }
     h1 {
       text-align: center;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 16px;
-      margin-top: 20px;
-    }
-    .grid img {
-      width: 100%;
-      border-radius: 10px;
-      border: 2px solid #ccc;
-      background: white;
-      padding: 6px;
-      object-fit: contain;
-    }
-    .grid p {
-      text-align: center;
-      font-size: 13px;
-      margin: 4px 0 0 0;
-    }
-    .item {
+    .item-row {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      padding: 12px;
+      gap: 16px;
+    }
+    .item-row img {
+      width: 100px;
+      border-radius: 8px;
+      border: 1px solid #999;
+    }
+    .code-box {
+      background: #eee;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 13px;
+      flex: 1;
+      word-break: break-all;
     }
   </style>
 </head>
 <body>
-  <h1>Item Image Gallery</h1>
-  <div class="grid">
-    <div class="item">
-      <img src="Blade of Frostbite.png" alt="Blade of Frostbite" />
-      <p>Blade of Frostbite</p>
-    </div>
-    <div class="item">
-      <img src="Bronze Sword.png" alt="Bronze Sword" />
-      <p>Bronze Sword</p>
-    </div>
-    <div class="item">
-      <img src="Golden Sword.png" alt="Golden Sword" />
-      <p>Golden Sword</p>
-    </div>
-    <div class="item">
-      <img src="Iron Sword.png" alt="Iron Sword" />
-      <p>Iron Sword</p>
-    </div>
-    <div class="item">
-      <img src="Serrated Fangblade.png" alt="Serrated Fangblade" />
-      <p>Serrated Fangblade</p>
-    </div>
-    <div class="item">
-      <img src="Silver Sword.png" alt="Silver Sword" />
-      <p>Silver Sword</p>
-    </div>
-    <div class="item">
-      <img src="Steelbrand.png" alt="Steelbrand" />
-      <p>Steelbrand</p>
-    </div>
-    <div class="item">
-      <img src="blade_of_ice.png" alt="blade_of_ice" />
-      <p>blade_of_ice</p>
-    </div>
-    <div class="item">
-      <img src="chainmail.png" alt="chainmail" />
-      <p>chainmail</p>
-    </div>
-    <div class="item">
-      <img src="cloth armor.png" alt="cloth armor" />
-      <p>cloth armor</p>
-    </div>
-    <div class="item">
-      <img src="leather armor.png" alt="leather armor" />
-      <p>leather armor</p>
-    </div>
-    <div class="item">
-      <img src="scalehide armor.png" alt="scalehide armor" />
-      <p>scalehide armor</p>
+  <h1>Item Image Gallery + App Snippets</h1>
+
+  <!-- One row per item -->
+  <div class="item-row">
+    <img src="Blade of Frostbite.png" alt="Blade of Frostbite">
+    <div class="code-box">
+      "https://bandido221.github.io/fairfinderv-assets/items/Blade%20of%20Frostbite.png"
     </div>
   </div>
+
+  <div class="item-row">
+    <img src="Bronze Sword.png" alt="Bronze Sword">
+    <div class="code-box">
+      "https://bandido221.github.io/fairfinderv-assets/items/Bronze%20Sword.png"
+    </div>
+  </div>
+
+  <div class="item-row">
+    <img src="Golden Sword.png" alt="Golden Sword">
+    <div class="code-box">
+      "https://bandido221.github.io/fairfinderv-assets/items/Golden%20Sword.png"
+    </div>
+  </div>
+
+  <!-- Add more rows below using the same structure -->
 </body>
 </html>
